@@ -1,0 +1,177 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #73dab2;
+}
+
+.flex {
+    margin: 10px;
+}
+
+.flexOne {
+    display: flex;
+}
+
+.flexOne .square {
+    margin: 5px;
+}
+
+.flexTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexTwo .square {
+    margin: 2px;
+}
+
+.flexThree {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: bold;
+}
+
+.flexFour {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+}
+
+.flexFour .square {
+    width: 100px;
+    height: 100px;
+    background-color: #3d8b6d;
+    margin: 5px;
+}
+
+.flexFive {
+    display: flex;
+    width: 350px;
+}
+
+.flexFive .item {
+    width: 100px;
+    height: 100px;
+    background-color: #0b6643;
+    margin: 2px;
+}
+
+#grow {
+    flex-grow: 2;
+}
+
+.flexSix {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    background-color: #f1f1f1;
+
+}
+
+.flexSix .one {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.flexSix .two {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d6d6d6;
+    margin-bottom: 40px;
+}
+
+.flexSix .three {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Call the class of flexSeven.
+ Give it a height of 400px and a width of 500px. 
+ Use flexbox and set justify-content to space-between. 
+ This will give us 4 columns. 
+ We will leave the flex-direction on the default of row 
+ and use justify-content to move the elements in a different way. 
+ On divs one through four, use flexbox and set the flex-direction to column 
+ so that the elements remain on top of each other. 
+ On div one, we can set justify-content to center. 
+ Two to flex-end, three to flex-start, and four to space-between. 
+ Now you can see how we can also arrange items vertically using justify-content 
+ if we also set flex-direction to column.  */
+
+.flexSeven {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexSeven > .one {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.flexSeven .two {
+    display: flex;
+    
+    justify-content: flex-end;
+}
+
+.flexSeven .three {
+    display: flex;
+    
+    justify-content: flex-start;
+}
+
+.flexSeven .four {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexEight {
+    display: flex;
+    height: 400px;
+    background-color: #eeeeee;
+    width: 300px;
+
+}
+
+.flexEight .one {
+    display: flex;
+    align-items: center;
+}
+
+.flexEight .two {
+    display: flex;
+    align-items: flex-end;
+}
+
+.flexEight .three {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Call the class of flexNine. 
+Use flexbox. Set the width to 450px and the height to 250px. 
+Set the background color to #eeeeee. 
+Use align-items to make the elements start at the top. 
+Use justify-content to space the elements evenly. 
+Now you can select the special id. Use the property align-self and set it to flex-end. 
+This way we can override the 3rd square and make it start at the bottom instead of the top.
+ */
+
+ .flexNine {
+    display: flex;
+    width: 450px;
+    height: 250px;
+    background-color: #eeeeee;
+    align-items: flex-start;
+    justify-content: space-evenly;
+ }
+
+ #special {
+    align-self: flex-end;
+ }
