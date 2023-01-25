@@ -104,30 +104,42 @@
     height: 400px;
     width: 500px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
 }
 
-.flexSeven > .one {
+.flexSeven .square {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.flexSeven .one {
+    margin: 20px;
     display: flex;
-    
-    justify-content: center;
+    flex-direction: column;
+   justify-content: center;
 }
 
 .flexSeven .two {
+    margin: 20px;
     display: flex;
-    
+    flex-direction: column;
     justify-content: flex-end;
 }
 
 .flexSeven .three {
+    margin: 2px;
     display: flex;
-    
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.flexSeven .four {
+.flexSeven .four .square{
+    margin: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -163,15 +175,15 @@ Now you can select the special id. Use the property align-self and set it to fle
 This way we can override the 3rd square and make it start at the bottom instead of the top.
  */
 
- .flexNine {
+.flexNine {
     display: flex;
     width: 450px;
     height: 250px;
     background-color: #eeeeee;
     align-items: flex-start;
     justify-content: space-evenly;
- }
+}
 
- #special {
+#special {
     align-self: flex-end;
- }
+}
